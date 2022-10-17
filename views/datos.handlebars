@@ -1,0 +1,33 @@
+  <form action="/html-onwire" method="POST">
+                <!-- Campo nombre-->
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" class="form-control" type="text" name="user" required>
+                </div>
+
+                <!-- Campo apellido -->
+                 <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input id="apellido" class="form-control" type="text" name="user" required>
+                </div>
+
+                <!-- Campo DNI -->
+               <div class="form-group">
+                    <label for="dni">DNI</label>
+                    <input id="dni" class="form-control" type="text" name="user" required>
+                </div>
+
+                <!-- Botón de envío -->
+                <button class="btn btn-success mt-3">Enviar</button>
+            </form>
+
+{{#each users}}
+
+<ul>
+    <li>{{nombre}}</li>
+    <li>{{apellido}}</li>
+    <li>{{dni}}</li>
+
+</ul>
+
+{{/each}}
